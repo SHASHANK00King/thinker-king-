@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thinker King - Free AI and study tools for students.">
+  <meta name="keywords" content="Thinker King, AI tools, study tools, student tools, quiz, notes, summarizer">
+  <meta name="theme-color" content="#111827">
+  <title>Thinker King | AI & Study Tools</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827}
+    header{background:#111827;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:25px;font-weight:800}.logo span{color:#fbbf24}
+    nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
+    .hero{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#111827,#312e81);color:white}
+    .hero h1{font-size:48px;margin:0 0 12px}.hero p{font-size:18px;max-width:650px;margin:0 auto 25px;line-height:1.6}
+    .btn{display:inline-block;background:#fbbf24;color:#111827;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+    .container{max-width:1100px;margin:auto;padding:45px 20px}.section-title{text-align:center;font-size:30px;margin-bottom:25px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:white;border-radius:16px;padding:24px;box-shadow:0 6px 20px #0000000d;border:1px solid #e5e7eb}
+    .icon{font-size:34px}.card h3{margin:12px 0 8px}.card p{color:#6b7280;line-height:1.5}
+    .tool-btn{border:0;background:#111827;color:white;padding:10px 14px;border-radius:8px;cursor:pointer}
+    .about{background:#eef2ff;border-radius:18px;padding:30px;line-height:1.7}
+    footer{text-align:center;background:#111827;color:#d1d5db;padding:25px;margin-top:20px}
+    @media(max-width:600px){.hero h1{font-size:36px}nav{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">👑 Thinker <span>King</span></div>
+  <nav><a href="#ai">AI Tools</a><a href="#study">Study Tools</a><a href="#about">About</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Thinker King 👑</h1>
+  <p>Free AI & Study Tools — students ke liye simple, useful aur easy-to-use tools.</p>
+  <a class="btn" href="#ai">Explore Tools</a>
+</section>
+
+<section class="container" id="ai">
+  <h2 class="section-title">🤖 AI Tools</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">💬</div><h3>AI Question Answer</h3><p>Questions ko understand karke clear answers paane ke liye.</p><button class="tool-btn" onclick="comingSoon('AI Question Answer')">Open Tool</button></div>
+    <div class="card"><div class="icon">✍️</div><h3>Essay Writer</h3><p>Topics ke liye ideas aur structured writing help.</p><button class="tool-btn" onclick="comingSoon('Essay Writer')">Open Tool</button></div>
+    <div class="card"><div class="icon">📝</div><h3>Summarizer</h3><p>Long text ko short aur easy points mein convert karo.</p><button class="tool-btn" onclick="comingSoon('Summarizer')">Open Tool</button></div>
+    <div class="card"><div class="icon">🌐</div><h3>Translator</h3><p>Text ko different languages mein translate karne mein help.</p><button class="tool-btn" onclick="comingSoon('Translator')">Open Tool</button></div>
+  </div>
+</section>
+
+<section class="container" id="study">
+  <h2 class="section-title">📚 Study Tools</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">❓</div><h3>Quiz Generator</h3><p>Practice ke liye topic-based quizzes.</p><button class="tool-btn" onclick="comingSoon('Quiz Generator')">Open Tool</button></div>
+    <div class="card"><div class="icon">📒</div><h3>Notes Maker</h3><p>Important points ko organized notes mein rakho.</p><button class="tool-btn" onclick="comingSoon('Notes Maker')">Open Tool</button></div>
+    <div class="card"><div class="icon">🎴</div><h3>Flashcards</h3><p>Quick revision ke liye flashcard-style learning.</p><button class="tool-btn" onclick="comingSoon('Flashcards')">Open Tool</button></div>
+    <div class="card"><div class="icon">🧮</div><h3>Math Helper</h3><p>Math problems ko step-by-step samajhne mein help.</p><button class="tool-btn" onclick="comingSoon('Math Helper')">Open Tool</button></div>
+  </div>
+</section>
+
+<section class="container" id="about">
+  <div class="about">
+    <h2>About Thinker King</h2>
+    <p>Thinker King ek free learning website ka starter version hai. Yahan AI aur study tools ko ek simple place par laane ka goal hai.</p>
+    <p><b>Note:</b> Current buttons demo mode mein hain. Real AI features connect karne ke liye backend/API setup ki zarurat hogi.</p>
+  </div>
+</section>
+
+<footer>© 2026 Thinker King — Learn • Think • Grow 👑</footer>
+
+<script>
+function comingSoon(name){
+  alert(name + " — Coming Soon! 🚀");
+}
+</script>
+</body>
+</html>
