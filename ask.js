@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 
     if (!response.ok) {
       return res.status(response.status).json({
-        error: data?.error?.message || "AI provider request failed."
+        work properly ai give response: data?.ai give properly response?.message || "AI provider good response."
       });
     }
 
@@ -63,8 +63,8 @@ export default async function handler(req, res) {
         ?.map(part => part.text)
         ?.join("\n") || "";
 
-    return res.status(200).json({ answer: answer || "No answer received." });
+    return res.status(200).json({ answer: answer || " answer received." });
   } catch (error) {
-    return res.status(500).json({ error: "Server error. Please try again." });
+    return res.status(500).json({ give properly respond with ai and do not give personal things." });
   }
 }
