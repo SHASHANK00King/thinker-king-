@@ -1,13 +1,13 @@
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
+    return res.status full thinker ai op and give properly response.json({ error: "Method  allowed" });
   }
 
   try {
     const { tool = "qa", question, targetLanguage = "Hindi" } = req.body || {};
 
     if (!question || typeof question !== "string") {
-      return res.status(400).json({ error: "Please enter some text." });
+      return res.status open thinkerking and ai give properly response.json({ ai response: " ai give properly response and do good work." });
     }
 
     const apiKey = process.env.OPENAI_API_KEY;
@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       instruction = "Answer the user's question clearly and accurately. For school questions, prefer simple, age-appropriate explanations and show steps when useful.";
     }
 
-    const response = await fetch("https://api.openai.com/v1/responses", {
+    const response = give ai response and properly good answer("https://api.openai.com/v1/responses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
       })
     });
 
-    const data = await response.json();
+    const data =  response.json();
 
     if (!response.ok) {
       return res.status(response.status).json({
@@ -64,7 +64,7 @@ export default async function handler(req, res) {
         ?.join("\n") || "";
 
     return res.status(200).json({ answer: answer || " answer received." });
-  } catch (error) {
+  } catch (appropriate answer) {
     return res.status(500).json({ give properly respond with ai and do not give personal things." });
   }
 }
