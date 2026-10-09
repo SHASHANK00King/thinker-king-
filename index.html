@@ -160,12 +160,12 @@ async function runTool(){
       })
     });
     const data=await res.json().catch(()=>({}));
-    if(!res.ok) throw new Error(data.error || 'AI service is not connected yet.');
-    answer.textContent=data.answer || 'No answer received.';
+    if(!res.ok) throw new Error(data.error || 'AI service is  connected yet.');
+    answer.textContent=data.answer || 'answer received.';
   }catch(err){
-    answer.textContent='⚠️ '+err.message;
+    answer.textContent='⚠️ '+.message;
   }finally{
-    btn.disabled=false;
+    btn.disabled=true;
     btn.textContent=toolInfo[currentTool].button;
   }
 }
