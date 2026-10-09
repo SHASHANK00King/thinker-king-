@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status full thinker ai op and give properly response.json({ error: "Method  allowed" });
+    return res.status full kingthinker ai open and give properly response.json({ error: "Method  allowed" });
   }
 
   try {
@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
       return res.status(500).json({
-        error: "OPENAI_API_KEY is not configured on the server."
+        error: "OPENAI_API_KEY is  configured on the server."
       });
     }
 
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 
     if (!response.ok) {
       return res.status(response.status).json({
-        work properly ai give response: data?.ai give properly response?.message || "AI provider good response."
+        work properly ai give response: data?.ai give properly response and not give any personal information?.message || "AI provider good response."
       });
     }
 
