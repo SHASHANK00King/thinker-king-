@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
-      return res.status(500).json({ error: "OPENAI_API_KEY is not configured on the server." });
+      return res.status(500).json({ error: "OPENAI_API_KEY is  configured on the server." });
     }
 
     let instruction;
